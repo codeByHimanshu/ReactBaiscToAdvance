@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter,Router,Route, Routes} from "react-router-dom"
-import Counter from './components/counter';
+import Counter from './components/Counter';
+import Todo from './components/Todo';
 
 
 
@@ -11,6 +12,7 @@ const App = () => {
 
       <Routes>
         <Route path ='/counter' element = {<Counter/>} />
+        <Route path ='/todos' element = {<Todo/>} />
       </Routes>
 
       </BrowserRouter>
