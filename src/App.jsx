@@ -4,6 +4,7 @@ import Counter from './components/Counter';
 import Todo from './components/Todo';
 import Rerender from './components/Rerender';
 import TodoApp from './TodoApp/TodoApp';
+import InputSum from './useMemo/InputSum';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path ='/todos' element = {<Todo/>} />
         <Route path ='/rerender' element = {<Rerender/>} />
         <Route path ='/todoapp' element = {<TodoApp/>} />
+        <Route path ='/inputsum' element = {<InputSum/>} />
       </Routes>
 
       </BrowserRouter>

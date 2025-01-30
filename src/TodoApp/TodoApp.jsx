@@ -17,6 +17,16 @@ export default function TodoApp() {
       title: "colleg",
       description: "takes all your money",
     },
+    {
+        id:4,
+      title: "learnig",
+      description: "improves your knowledge",
+    },
+    {
+        id:5,
+      title: "healthy food",
+      description: "good for health",
+    },
   ]);
 
   function AddTodo() {
@@ -27,8 +37,10 @@ export default function TodoApp() {
     }]);
   }
 
+  
 return (
   <>
+ 
   <button onClick={AddTodo}>addTodo</button>
     {todos.map((todo) => (
         <CustomTodo key={todo.id} title={todo.title} description={todo.description} />     
