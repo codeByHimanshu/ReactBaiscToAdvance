@@ -5,6 +5,7 @@ import Todo from './components/Todo';
 import Rerender from './components/Rerender';
 import TodoApp from './TodoApp/TodoApp';
 import InputSum from './useMemo/InputSum';
+import UseCallBack from './useCallback/UseCallBack';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path ='/rerender' element = {<Rerender/>} />
         <Route path ='/todoapp' element = {<TodoApp/>} />
         <Route path ='/inputsum' element = {<InputSum/>} />
+        <Route path ='/usecall' element = {<UseCallBack/>} />
       </Routes>
 
       </BrowserRouter>
