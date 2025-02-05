@@ -8,8 +8,6 @@ export default function UseCallBack(params) {
     console.log("input function");
   },[]);
 
-
-
   return (
     <div>
       <h1>UseCallBack</h1>
