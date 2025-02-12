@@ -7,6 +7,7 @@ import TodoApp from './TodoApp/TodoApp';
 import InputSum from './useMemo/InputSum';
 import UseCallBack from './useCallback/UseCallBack';
 import Bankdata from './AllHooks/Bankdata';
+import Assignment1 from './Assignment(week 6)/Assginment1';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path ='/inputsum' element = {<InputSum/>} />
         <Route path ='/usecall' element = {<UseCallBack/>} />
         <Route path ='/bank' element = {<Bankdata/>} />
+        <Route path ='/assign1' element = {<Assignment1/>} />
       </Routes>
 
       </BrowserRouter>
