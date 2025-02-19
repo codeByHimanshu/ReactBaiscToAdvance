@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 export default function Assignment1() {
     const [input, setInput] = useState(0);
     const [fact, setFact] = useState(1);
 
-    const calculateFact = (n) => {
+    const calculateFact = useCallback((n)=>{
         if (n < 0) return "Invalid input"; 
         let result = 1;
         for (let i = 1; i <= n; i++) {
@@ -12,8 +12,7 @@ export default function Assignment1() {
         }
         return result;
         console.log('fact fun rendered');
-        
-    };
+    }) 
     console.log('fact fun rendered');
     return (
         <>
