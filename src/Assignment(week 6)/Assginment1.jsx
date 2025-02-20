@@ -13,7 +13,7 @@ export default function Assignment1() {
         return result;
         console.log('fact fun rendered');
     }) 
-  
+    console.log('fact fun rendered');
     return (
         <>
             <input
