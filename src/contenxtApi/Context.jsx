@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CountContex } from "./exCount";
+
 
 export default function Context() {
   const [count, setCount] = useState(0);
@@ -12,17 +14,20 @@ export default function Context() {
 function Count({ count, setCount }) {
   return (
     <div>
-      <RenederCount count={count} />
-      <Buttons count={count} setCount={setCount} />
+        <CountContex.Provider value={count} >
+
+      <RenederCount />
+      <Buttons setCount={setCount} />
+        </CountContex.Provider>
     </div>
   );
 }
-function RenederCount({ count }) {
-  console.log(count);
-
+function RenederCount() {
+    const count = useContext(CountContex)
   return <div> count is : {count}</div>;
 }
-function Buttons({ count, setCount }) {
+function Buttons({ setCount }) {
+    const count = useContext(CountContex)
   return (
     <div>
       <button
