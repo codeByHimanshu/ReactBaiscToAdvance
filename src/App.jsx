@@ -10,6 +10,7 @@ import Bankdata from './AllHooks/Bankdata';
 import Assignment1 from './Assignment(week 6)/Assginment1';
 import Assignment2 from './Assignment(week 6)/Assignment2';
 import Assignment3 from './Assignment(week 6)/Assignment3';
+import Context from './contenxtApi/Context';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path ='/assign1' element = {<Assignment1/>} />
         <Route path ='/assign2' element = {<Assignment2/>} />
         <Route path ='/assign3' element = {<Assignment3/>} />
+        <Route path ='/context' element = {<Context/>} />
       </Routes>
 
       </BrowserRouter>
