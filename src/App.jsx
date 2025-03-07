@@ -11,6 +11,7 @@ import Assignment1 from './Assignment(week 6)/Assginment1';
 import Assignment2 from './Assignment(week 6)/Assignment2';
 import Assignment3 from './Assignment(week 6)/Assignment3';
 import Context from './contenxtApi/Context';
+import CounterState from './stateManagement/CounterState';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Route path ='/assign2' element = {<Assignment2/>} />
         <Route path ='/assign3' element = {<Assignment3/>} />
         <Route path ='/context' element = {<Context/>} />
+        <Route path ='/state' element = {<CounterState/>} />
       </Routes>
 
       </BrowserRouter>
