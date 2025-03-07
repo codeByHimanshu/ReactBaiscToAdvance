@@ -1,10 +1,21 @@
-import { useRecoilValue } from "recoil";
+import { useRecoilValue, useRecoilState,RecoilRoot } from "recoil";
 import { countAtom } from "./Store/Count";
 
 export default function () {
-  return <>hiin there</>;
+  return <>
+  <RecoilRoot>
+    <Counter />
+  </RecoilRoot>
+  </>;
 
+function Counter() {
+  
+return <div>
+<RenderCount />
+  <Buttons />
+</div>
 
+}
 
 
 function RenderCount() {
@@ -16,18 +27,19 @@ function RenderCount() {
 
 
   function Buttons() {
+    const [count,setCount] = useRecoilState(countAtom)
     return (
       <div>
         <button
           onClick={() => {
-            setCount(count + 1);
+            setCount(count+ 1);
           }}
         >
           increament counter
         </button>
         <button
           onClick={() => {
-            setCount(count - 1);
+            setCount(count -1);
           }}
         >
           decrease counter
